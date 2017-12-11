@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * |        | Q/Й  | W/Ц  | E/У  | R/К  | T/Е  |  5   |           |   6  | Y/Н  | U/Г  | I/Ш  | O/Щ  | P/З  |  [/Х   |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * | LShift | A/Ф  | S/Ы  | D/В  | F/А  | G/П  |------|           |------| H/Р  |J/О/~M| K/Л  | L/Д  | ;/Ж  |'/Э/RSht|
+ * | LShift | A/Ф  | S/Ы  | D/В  | F/А  | G/П  |------|           |------| H/Р  | J/О  | K/Л  |L/Д/~M| ;/Ж  |'/Э/RSht|
  * |--------+------+------+------+------+------| Home |           | Del  |------+------+------+------+------+--------|
  * |Ctl+Shft|Z/Я/LC| X/Ч  | C/С  | V/М  | B/И  |      |           |      | N/Т  | M/Ь  | ,/Б  | ./Ю  |//./RC|  ]/Ъ   |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
@@ -49,11 +49,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                        KC_NO,
                                         LT(SYMB, KC_SPC), KC_BSPACE, KC_LALT,
         // right hand
-             KC_NO,   KC_7,   KC_8,           KC_9,    KC_0,    KC_NO,           KC_NO,
-             KC_6,    KC_Y,   KC_U,           KC_I,    KC_O,    KC_P,            KC_LBRC,
-                      KC_H,   LT(MDIA, KC_J), KC_K,    KC_L,    KC_SCLN,         RSFT_T(KC_QUOTE),
-             KC_DELT, KC_N,   KC_M,           KC_COMM, KC_DOT,  RCTL_T(KC_SLSH), KC_RBRC,
-                              KC_DOWN,        KC_UP,   KC_NO,   KC_NO,           KC_NO,
+             KC_NO,   KC_7,   KC_8,    KC_9,    KC_0,           KC_NO,           KC_NO,
+             KC_6,    KC_Y,   KC_U,    KC_I,    KC_O,           KC_P,            KC_LBRC,
+                      KC_H,   KC_J,    KC_K,    LT(MDIA, KC_L), KC_SCLN,         RSFT_T(KC_QUOTE),
+             KC_DELT, KC_N,   KC_M,    KC_COMM, KC_DOT,         RCTL_T(KC_SLSH), KC_RBRC,
+                              KC_DOWN, KC_UP,   KC_NO,          KC_NO,           KC_NO,
              KC_CAPSLOCK, KC_NO,
              KC_NO,
              KC_ESC, KC_TAB, LT(SYMB, KC_ENT)
