@@ -18,11 +18,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Basic layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * |        |      |   1  |   2  |   3  |   4  |      |           |      |   7  |   8  |   9  |   0  |      |        |
+ * |        |      |   1  |   2  |   3  |   4  |      |           |      |   7  |   8  |   9  |   0  |      |  '/Э   |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * |        | Q/Й  | W/Ц  | E/У  | R/К  | T/Е  |  5   |           |   6  | Y/Н  | U/Г  | I/Ш  | O/Щ  | P/З  |  [/Х   |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * | LShift | A/Ф  | S/Ы  | D/В  | F/А  | G/П  |------|           |------| H/Р  | J/О  | K/Л  |L/Д/~M| ;/Ж  |'/Э/RSht|
+ * | LShift | A/Ф  | S/Ы  | D/В  | F/А  | G/П  |------|           |------| H/Р  | J/О  | K/Л  |L/Д/~M| ;/Ж  | RShift |
  * |--------+------+------+------+------+------| Home |           | Del  |------+------+------+------+------+--------|
  * |Ctl+Shft|Z/Я/LC| X/Ч  | C/С  | V/М  | B/И  |      |           |      | N/Т  | M/Ь  | ,/Б  | ./Ю  |//./RC|  ]/Ъ   |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
@@ -42,16 +42,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // left hand
         KC_NO,           KC_NO,        KC_1,  KC_2,    KC_3,    KC_4,   KC_NO,
         KC_NO,           KC_Q,         KC_W,  KC_E,    KC_R,    KC_T,   KC_5,
-        KC_LSHIFT,       KC_A,         KC_S,  KC_D,    KC_F,    KC_G,
-        LCTL(KC_LSHIFT), LCTL_T(KC_Z), KC_X,  KC_C,    KC_V,    KC_B,   KC_HOME,
+        KC_LSFT,       KC_A,         KC_S,  KC_D,    KC_F,    KC_G,
+        LCTL(KC_LSFT), LCTL_T(KC_Z), KC_X,  KC_C,    KC_V,    KC_B,   KC_HOME,
         KC_NO,           KC_NO,        KC_NO, KC_LEFT, KC_RGHT,
                                                                 KC_NO, KC_LGUI,
                                                                        KC_NO,
                                         LT(SYMB, KC_SPC), KC_BSPACE, KC_LALT,
         // right hand
-             KC_NO,   KC_7,   KC_8,    KC_9,    KC_0,           KC_NO,           KC_NO,
+             KC_NO,   KC_7,   KC_8,    KC_9,    KC_0,           KC_NO,           KC_QUOT,
              KC_6,    KC_Y,   KC_U,    KC_I,    KC_O,           KC_P,            KC_LBRC,
-                      KC_H,   KC_J,    KC_K,    LT(MDIA, KC_L), KC_SCLN,         RSFT_T(KC_QUOTE),
+                      KC_H,   KC_J,    KC_K,    LT(MDIA, KC_L), KC_SCLN,         KC_RSFT,
              KC_DELT, KC_N,   KC_M,    KC_COMM, KC_DOT,         RCTL_T(KC_SLSH), KC_RBRC,
                               KC_DOWN, KC_UP,   KC_NO,          KC_NO,           KC_NO,
              KC_CAPSLOCK, KC_NO,
